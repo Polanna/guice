@@ -19,6 +19,12 @@ import benchmark.StatsObject;
  */
 public class JSONFormatter implements ReportFormatStrategy {
 
+	/**
+	 * Create a JSON report to output stream
+	 * @param OutputStream
+	 * @param List<StatsObject>
+	 * @return
+	 */
 	@Override
 	public void formatOutputStream(OutputStream stream, List<StatsObject> data) {
 		// source: https://mkyong.com/java/how-to-enable-pretty-print-json-output-gson/

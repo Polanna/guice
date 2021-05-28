@@ -6,10 +6,19 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import benchmark.Config;
-
+/**
+ * 
+ * @author Gucci Team*
+ *
+ */
 public class OutputToFile implements OutputStrategy {
 	private OutputStream outputStream;
 	
+	/**
+	 * Return output stream to a file
+	 * @param Config
+	 * @return OutputStream
+	 */
 	public OutputStream getOutputStream(Config config) {
 		String fileFullPath = config.getFilename();
 		// create output stream
@@ -23,6 +32,11 @@ public class OutputToFile implements OutputStrategy {
 		return outputStream;
 	}
 	
+	/**
+	 * Make sure the output stream is closed
+	 * @param
+	 * @return
+	 */
 	public void close()
 	{
 		if (outputStream != null)
