@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import benchmark.Config;
-
+/**
+ * 
+ * @author Team Gucci
+ *
+ */
 public class OutputToFile implements OutputStrategy {
 	private OutputStream outputStream;
 	
@@ -23,6 +27,10 @@ public class OutputToFile implements OutputStrategy {
 		return outputStream;
 	}
 	
+	
+	/**
+	 * Implicitly called
+	 */
 	public void close()
 	{
 		if (outputStream != null)
