@@ -38,8 +38,8 @@ public class TimingObj {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * Return the loading duration of each class
+	 * @return endTime - startTime
 	 */
 	public long duration() {
 		return endTime - startTime;
