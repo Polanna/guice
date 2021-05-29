@@ -1,1 +1,1 @@
-{"benchmark.SimpleClass":{"P99":0,"Min":0,"Max":0,"P90":0,"Average":0,"P50":0},"benchmark.RandomObject":{"P99":2082,"Min":33,"Max":2082,"P90":75,"Average":236,"P50":58}}
+{"benchmark.SimpleClass":{"P99":0,"Min":0,"Max":0,"P90":0,"Average":0,"P50":0},"benchmark.RandomObject":{"P99":2055,"Min":27,"Max":2055,"P90":77,"Average":233,"P50":54}}

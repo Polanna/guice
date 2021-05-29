@@ -8,7 +8,7 @@ import java.io.OutputStream;
 import benchmark.Config;
 /**
  * 
- * @author Gucci Team*
+ * @author Team Gucci
  *
  */
 public class OutputToFile implements OutputStrategy {
@@ -34,6 +34,7 @@ public class OutputToFile implements OutputStrategy {
 	
 	/**
 	 * Make sure the output stream is closed
+   * Implicitly called
 	 * @param
 	 * @return
 	 */

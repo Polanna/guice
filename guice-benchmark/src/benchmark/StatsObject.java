@@ -5,25 +5,28 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * 
- */
-
-/**
  * Developed as class project for CSS553 at University of Washington (Bothell)
  * 
  * @author Gucci Team
  *
  */
+
+/**
+ * 
+ * StatsObject is used to store all the injection duration of the class
+ * and all the associated statistics
+ *
+ */
 public class StatsObject {
 
-	private List<Long> timings; // needs to be sorted at some point before stats is given
+	private List<Long> timings;
 	private String className;
 	private long max = Long.MIN_VALUE;
 	private long min = Long.MAX_VALUE;
 	private long sum;
 
 	/**
-	 * 
+	 * instantiate the list storing all the injection durations of a class
 	 * @param className
 	 */
 	public StatsObject(String className) {
@@ -33,14 +36,14 @@ public class StatsObject {
 
 	/**
 	 * 
-	 * @return className of the class whose injected durations are managed by this StatsObject
+	 * @return className of the class whose injection durations are managed by this StatsObject
 	 */
 	public String getClassName() {
 		return className;
 	}
 
 	/**
-	 * 
+	 * Add incoming new duration into the list
 	 * @param time
 	 */
 	public void addTiming(long time) {
@@ -58,6 +61,7 @@ public class StatsObject {
 	}
 
 	/**
+	 * Gives the average injection duration of this class
 	 * @return the average
 	 */
 	public long getAverage() {
@@ -102,7 +106,7 @@ public class StatsObject {
 	}
 	
 	/**
-	 * Gives the 90 percentile - median
+	 * Gives the 90 percentile
 	 * @return the p90 duration in the timing list
 	 */
 	public long getP90() {
@@ -118,7 +122,7 @@ public class StatsObject {
 	}
 	
 	/**
-	 * Gives the 99 percentile - median
+	 * Gives the 99 percentile
 	 * @return the p99 duration in the timing list
 	 */
 	public long getP99() {
