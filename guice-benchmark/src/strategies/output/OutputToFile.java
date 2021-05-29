@@ -14,6 +14,11 @@ import benchmark.Config;
 public class OutputToFile implements OutputStrategy {
 	private OutputStream outputStream;
 	
+	/**
+	 * Return output stream to a file
+	 * @param Config
+	 * @return OutputStream
+	 */
 	public OutputStream getOutputStream(Config config) {
 		String fileFullPath = config.getFilename();
 		// create output stream
@@ -27,9 +32,11 @@ public class OutputToFile implements OutputStrategy {
 		return outputStream;
 	}
 	
-	
 	/**
-	 * Implicitly called
+	 * Make sure the output stream is closed
+   * Implicitly called
+	 * @param
+	 * @return
 	 */
 	public void close()
 	{
