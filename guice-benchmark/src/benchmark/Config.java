@@ -4,29 +4,57 @@ package benchmark;
  * Configuration Developed as class project for CSS553 at University of
  * Washington (Bothell)
  * 
- * @author Gucci Team *
+ * @author Gucci Team
  */
 public class Config {
 	private String outputFormat;
-	private String outputType; // change name to outputType
+	private String outputType;
 	private String filename;
 
+	/**
+	 * Assigns default configurations
+	 */
 	public Config() {
-		// assigns everything
 		this.outputFormat = "csv";
 		this.outputType = "screen";
 	}
 
+	/**
+	 * Assigns default configuration for output type 
+	 * 
+	 * Assigns user configuration for output format
+	 * 
+	 * @param outputFormat
+	 */
 	public Config(String outputFormat) {
 		this.outputFormat = outputFormat;
 		this.outputType = "screen";
 	}
 
+	/**
+	 * Assigns user configuration for output location 
+	 * 
+	 * Assigns user configuration for output format
+	 * 
+	 * @param outputFormat
+	 * @param location
+	 */
 	public Config(String outputFormat, String location) {
 		this.outputFormat = outputFormat;
 		this.outputType = location;
 	}
-	
+
+	/**
+	 * Assigns user configuration for output location 
+	 * 
+	 * Assigns user configuration for output format
+	 * 
+	 * Assigns user configuration for filename
+	 * 
+	 * @param outputFormat
+	 * @param outputType
+	 * @param filename
+	 */
 	public Config(String outputFormat, String outputType, String filename) {
 		this.outputFormat = outputFormat;
 		this.outputType = outputType;

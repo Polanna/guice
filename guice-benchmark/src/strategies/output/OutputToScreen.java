@@ -5,8 +5,9 @@ import java.io.OutputStream;
 import benchmark.Config;
 
 /**
+ * Developed as class project for CSS553 at University of Washington (Bothell)
  * 
- * @author Gucci Team*
+ * @author Gucci Team
  *
  */
 public class OutputToScreen implements OutputStrategy{

@@ -4,6 +4,10 @@ import java.util.Random;
 
 import com.google.inject.Inject;
 
+/**
+ * Test object that instantiates ExpensiveSingleton
+ * 
+ */
 public class RandomObject {
 	private ExpensiveSingleton es;
 	

@@ -11,6 +11,10 @@ import benchmark.StatsObject;
  * @author Gucci Team
  *
  */
+/**
+ * To be implemented
+ * 
+ */
 public class HTMLFormatter implements ReportFormatStrategy {
 
 	@Override

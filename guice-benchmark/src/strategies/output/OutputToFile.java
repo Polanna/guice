@@ -6,16 +6,19 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import benchmark.Config;
+
 /**
+ * Developed as class project for CSS553 at University of Washington (Bothell)
  * 
- * @author Team Gucci
+ * @author Gucci Team
  *
  */
 public class OutputToFile implements OutputStrategy {
 	private OutputStream outputStream;
-	
+
 	/**
 	 * Return output stream to a file
+	 * 
 	 * @param Config
 	 * @return OutputStream
 	 */
@@ -31,17 +34,17 @@ public class OutputToFile implements OutputStrategy {
 		}
 		return outputStream;
 	}
-	
+
 	/**
-	 * Make sure the output stream is closed
-   * Implicitly called
+	 * Make sure the output stream is closed 
+	 * 
+	 * Implicitly called
+	 * 
 	 * @param
 	 * @return
 	 */
-	public void close()
-	{
-		if (outputStream != null)
-		{
+	public void close() {
+		if (outputStream != null) {
 			try {
 				outputStream.close();
 			} catch (IOException e) {
