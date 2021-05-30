@@ -14,6 +14,8 @@ public class TimingObj {
 	private String className;
 
 	/**
+	 * Creates a new TimingObj with the start time and className of the object being
+	 * benchmarked
 	 * 
 	 * @param startTime
 	 * @param className
@@ -24,6 +26,7 @@ public class TimingObj {
 	}
 
 	/**
+	 * 
 	 * @return the className
 	 */
 	public String getClassName() {
@@ -31,7 +34,7 @@ public class TimingObj {
 	}
 
 	/**
-	 * 
+	 * Stops the timing with the current system time in milliseconds
 	 */
 	public void stopTiming() {
 		this.endTime = System.currentTimeMillis();
@@ -39,6 +42,7 @@ public class TimingObj {
 
 	/**
 	 * Return the loading duration of each class
+	 * 
 	 * @return endTime - startTime
 	 */
 	public long duration() {

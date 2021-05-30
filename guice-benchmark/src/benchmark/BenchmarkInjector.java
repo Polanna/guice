@@ -43,9 +43,10 @@ public class BenchmarkInjector implements Injector {
 	}
 
 	/**
+	 * Creates the new injector as a BenchmarkInjector from the modules
 	 * 
 	 * @param modules
-	 * @return
+	 * @return the injector
 	 */
 	public static BenchmarkInjector createInjector(Module... modules) {
 		BenchmarkInjector tempInj = new BenchmarkInjector(Guice.createInjector(modules));
@@ -53,6 +54,7 @@ public class BenchmarkInjector implements Injector {
 	}
 
 	/**
+	 * Generates report from configuration
 	 * 
 	 * @param config
 	 */

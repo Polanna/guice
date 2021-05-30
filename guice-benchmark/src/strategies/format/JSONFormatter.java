@@ -23,7 +23,6 @@ public class JSONFormatter implements ReportFormatStrategy {
 	 * Create a JSON report to output stream
 	 * @param OutputStream
 	 * @param List<StatsObject>
-	 * @return
 	 */
 	@Override
 	public void formatOutputStream(OutputStream stream, List<StatsObject> data) {

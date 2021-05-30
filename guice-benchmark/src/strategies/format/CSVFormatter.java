@@ -7,8 +7,9 @@ import benchmark.StatsObject;
 import java.io.IOException;
 
 /**
+ * Developed as class project for CSS553 at University of Washington (Bothell)
  * 
- * @author Gucci Team*
+ * @author Gucci Team
  *
  */
 
@@ -18,7 +19,6 @@ public class CSVFormatter implements ReportFormatStrategy {
 	 * Create a CSV report to output stream
 	 * @param OutputStream
 	 * @param List<StatsObject>
-	 * @return
 	 */
 	@Override
 	public void formatOutputStream(OutputStream stream, List<StatsObject> data) {

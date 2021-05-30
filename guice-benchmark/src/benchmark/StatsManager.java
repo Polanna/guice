@@ -22,7 +22,7 @@ public class StatsManager {
 	 * 
 	 * @param <T>
 	 * @param type
-	 * @return
+	 * @return TimingObj that is linked to type
 	 */
 	public <T> TimingObj startTiming(Class<T> type) {
 		TimingObj timer = new TimingObj(System.currentTimeMillis(), type.getTypeName());
@@ -32,7 +32,7 @@ public class StatsManager {
 	/**
 	 * Converts map of data to list
 	 * 
-	 * @return
+	 * @return list of data
 	 */
 
 	public List<StatsObject> getData() {

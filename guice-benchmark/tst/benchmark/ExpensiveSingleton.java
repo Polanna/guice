@@ -2,6 +2,11 @@ package benchmark;
 
 import com.google.inject.Singleton;
 
+/**
+ * A test singleton object that is expensive to instantiate
+ * 
+ *
+ */
 @Singleton
 public class ExpensiveSingleton {
 	public ExpensiveSingleton()
